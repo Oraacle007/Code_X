@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ✅ Fix: Proper font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+section {
+  background-color: #D7F5DC;
+  padding: 10px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  height: 30px;
+  width: 120px;
+  background-image: url(home-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.navlink:hover {
+  color: #178C46;
+  transition: color 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+/* Buttons */
+.login-btn,
+.reg-btn,
+.gs-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  border: 1.5px solid #20B15A;
+  padding: 8px 16px;
+  color: black;
+}
+
+.login-btn:hover {
+  background-color: #20B15A;
+  color: #fff;
+}
+
+.reg-btn {
+  background-color: #20B15A;
+  padding: 8px 16px;
+  color: white;
+}
+
+.reg-btn:hover {
+  background-color: #178C46;
+}
+
+.gs-btn {
+  background-color: #20B15A;
+  padding: 12px 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.gs-btn:hover {
+  background-color: #178C46;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding:20px 60px;
+}
+
+.left-div h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.left-div p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.lady{
+  width: 100%;
+  
+  height: 400px;
+  background-image: url("Header Lady 1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: flex-start;
+}
+
+.lady img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  background-color: white;
+  margin-top: -20px;
+  justify-content: space-around;
+  width:100%;
+  
+}
+
+.next-section {
+  background-color: white;
+  padding: 20px 70px;
+}
+h6{
+    color:#20B15A;
+}
+
+.subtitle{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+ 
+}
+
+.card-content {
+  width: 300px;
+  text-align: left;
+  border-radius: 8px;
+
+}
+
+.card-text {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top:20px;
+  font-size: small;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.learn-more:hover {
+  background-color: #20B15A;
+  color: white;
+  transition: background-color 0.5s ease;
+}
