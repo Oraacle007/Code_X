@@ -236,14 +236,95 @@ h6{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     padding: 30px 10px 30px 10px;
-    border: 1px solid pink;
-
+    background-color: #FAFFFB;
+    gap: 0;
+    
+    
 }
 
 .stat-content{
-    width:250px;
+    width:200px;
     text-align: center;
-    box-shadow: 1px whitesmoke;
+    box-shadow: 2px 2px whitesmoke;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+.stat-content p{
+    font-size: x-small;
+}
+
+.stat-figure{
+    margin-top: 20px;
+    color: #20B15A;
+}
+
+.portfolio{
+     background-color: white;
+     padding: 20px 70px;
+}
+
+.subtitle2{
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 20px;
+
+}
+/*Grid for projects*/
+.projects{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Two equal columns*/
+    grid-template-rows: 200px 300px; /*Two rows with different heights*/
+    gap: 40px;
+    
+}
+
+/*Individual Project Card*/
+.project{
+    display: flex;
+    flex-direction: column; /*Stack image and text vertically*/
+    background: #fff; 
+    border-radius: 10px;  /*Rounded Corners*/
+    overflow: hidden;   /*Hide overflow content (like images exceeding container)*/
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /*Soft shadow for depth*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Smooth transition for hover effects*/
+    cursor: pointer; /*Pointer cursor on hover*/
+
+}
+
+/* Hover effects for cards */
+.project:hover{
+    transform: translate(-8px); /*Slightly lift the card up*/
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /*Darker shadow on hover*/
+
+}
+
+/* Explicit placement */
+.project:nth-child(1) { grid-row: 1; grid-column: 1; } /* short */
+.project:nth-child(2) { grid-row: 1; grid-column: 2; } /* tall */
+.project:nth-child(3) { grid-row: 2; grid-column: 1; } /* tall */
+.project:nth-child(4) { grid-row: 2; grid-column: 2; } /* short */
+
+/* image for each project */
+.project img{
+    width: 100%; /* Full width of the container */
+    display: block; /* Remove bottom space */
+}
+
+/* Project title */
+.project p {
+    font-size: 0.95rem;
+    color: #444;     /* Softer gray text*/
+    margin: 0 15px 20px; 
+
+
+}
+
+.project-heading{
+    margin-top: 20px;
+}
+
