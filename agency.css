@@ -231,3 +231,19 @@ h6{
   color: white;
   transition: background-color 0.5s ease;
 }
+
+.stat-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 30px 10px;
+    border: 1px solid pink;
+
+}
+
+.stat-content{
+    width:250px;
+    text-align: center;
+    box-shadow: 1px whitesmoke;
+}
