@@ -336,16 +336,17 @@ h6{
 
 .testi{
   font-size: 0.7rem;
-  padding: 10px;
+  padding:20px;
+  
 }
 .img-container{
   display: flex;
+  padding-top: 20px;
   padding-bottom: 40px;
   gap: 2px;
 }
 .img-circle{
-  border: 1px solid pink;
-  background-color: pink;
+  background-color: #E6E4FF;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -357,4 +358,19 @@ h6{
 .guru{
   font-size: small;
   padding-top: 5px;
+}
+
+.sub-container{
+  width: 100%;
+
+
+ 
+}
+
+.sub-content{
+  margin: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
