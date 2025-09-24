@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design Agency</title>
-  <link rel="stylesheet" href="agency.css">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section>
     <div class="header">
       <div class="logo"></div>
-      <div class="nav">
+      <!-- Mobile menu toggle button -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      <div class="nav" id="nav">
         <div class="dropdown">
           <a class="navlink dropdown-toggle" href="#">Services ▼</a>
           <div class="dropdown-menu">
@@ -44,7 +47,6 @@
       <img src="Notion.svg" alt="Notion">
       <img src="Slack.svg" alt="Slack">
     </div>
-    <br><br>
   </section>
 
   <section class="next-section">
@@ -53,174 +55,157 @@
         to your business growth</p>
         <br>
 
-<div class="card-container">
-  <div class="card-content">
-    <img src="Activity.svg" alt="Activity Icon" width="50" height="50">
-    <h3>Grow Your Business</h3>
-    <p class="card-text">We help you identify the best ways to <br> improve your business</p>
-    <a href="#" class="learn-more">Learn More →</a>
+    <div class="card-container">
+      <div class="card-content">
+        <img src="Activity.svg" alt="Activity Icon" width="50" height="50">
+        <h3>Grow Your Business</h3>
+        <p class="card-text">We help you identify the best ways to <br> improve your business</p>
+        <a href="#" class="learn-more">Learn More →</a>
+      </div>
+
+      <div class="card-content">
+        <img src="Heart.svg" alt="Heart Icon" width="50" height="50">
+        <h3>Improve Brand Loyalty</h3>
+        <p class="card-text">We help you identify the best ways to <br> improve your business</p>
+        <a href="#" class="learn-more">Learn More →</a>
+      </div>
+
+      <div class="card-content">
+        <img src="Work.svg" alt="Work Icon" width="50" height="50">
+        <h3>Improve Business Model</h3>
+        <p class="card-text">We help you identify the best ways to <br> improve your business</p>
+        <a href="#" class="learn-more">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stat-container">
+    <div class="stat-content">
+      <img src="project-plan.svg" alt="" width="50" height="50">
+      <p>Completed Projects</p>
+      <h3 class="stat-figure">100 +</h3>
+    </div>
+
+    <div class="stat-content">
+      <img src="rating (1).svg" alt="" width="50" height="50">
+      <p>Customer Satisfaction</p>
+      <h3 class="stat-figure">20%</h3>
+    </div>
+
+    <div class="stat-content">
+      <img src="raise.svg" alt="" width="50" height="50">
+      <p>Raised by Clients</p>
+      <h3 class="stat-figure">$10M</h3>
+    </div>
+
+    <div class="stat-content">
+      <img src="business.svg" alt="" width="50" height="50">
+      <p>Years in Business</p>
+      <h3 class="stat-figure">2 yrs</h3>
+    </div>
   </div>
 
-  <div class="card-content">
-    <img src="Heart.svg" alt="Heart Icon" width="50" height="50">
-    <h3>Improve Brand Loyalty</h3>
-    <p class="card-text">We help you identify the best ways to <br> improve your business</p>
-    <a href="#" class="learn-more">Learn More →</a>
-  </div>
-
-  <div class="card-content">
-    <img src="Work.svg" alt="Work Icon" width="50" height="50">
-    <h3>Improve Business Model</h3>
-    <p class="card-text">We help you identify the best ways to <br> improve your business</p>
-    <a href="#" class="learn-more">Learn More →</a>
-  </div>
-</div>
-</section>
-
-<div class="stat-container">
-    <div class="stat-content">
-        <img src="project-plan.svg" alt="" width="50" height="50">
-        <p>Completed Projects</p>
-         <h3 class="stat-figure">100 +</h3>
-    </div>
-
-    <div class="stat-content">
-        <img src="rating (1).svg" alt="" width="50" height="50">
-        <p>Customer Satisfaction</p>
-        <h3 class="stat-figure">20%</h3>
-    </div>
-
-    <div class="stat-content">
-        <img src="raise.svg" alt="" width="50" height="50">
-        <p>Raised by Clients</p>
-        <h3 class="stat-figure">$10M</h3>
-    </div>
-
-    <div class="stat-content">
-        <img src="business.svg" alt="" width="50" height="50">
-        <p>Years in Business</p>
-        <h3 class="stat-figure">2 yrs</h3>
-    </div>
-
-
-</div>
-
-<section class="portfolio">
+  <section class="portfolio">
     <h6>OUR PORTFOLIO</h6>
     <p class="subtitle2">We provide the Perfect Solution <br> to your business growth</p>
 
     <div class="project-container">
       <div class="div-left">
         <div class="project1">
-        <img src="agency-web.svg" alt="Digital Marketing Agency Website">
-        <h3 class="project-heading">Digital Marketing Agency Website</h3>
-        <p class="project-text">This is a website for a client who wants to achieve their goals and meet
-          their users' needs while also increasing their reach across all platforms.
-          This is a website rebrand.
-        </p>
+          <img src="agency-web.svg" alt="Digital Marketing Agency Website">
+          <h3 class="project-heading">Digital Marketing Agency Website</h3>
+          <p class="project-text">This is a website for a client who wants to achieve their goals and meet
+            their users' needs while also increasing their reach across all platforms.
+            This is a website rebrand.
+          </p>
+        </div>
 
-       </div>
+        <div class="project2">
+          <img src="agency-web_3.svg" alt="">
+          <h3 class="project-heading">Digital Marketing Agency Website</h3>
+          <p class="project-text">This is a website for a client who wants to achieve their goals and meet
+            their users' needs while also increasing their reach across all platforms.
+            This is a website rebrand.
+          </p>
+        </div>  
+      </div>
 
-       <div class="project2">
-        <img src="agency-web_3.svg" alt="">
-         <h3 class="project-heading">Digital Marketing Agency Website</h3>
-        <p class="project-text">This is a website for a client who wants to achieve their goals and meet
-          their users' needs while also increasing their reach across all platforms.
-          This is a website rebrand.
-        </p>
-
-       </div>  
-    </div>
       <div class="div-right">
         <div class="project3">
           <img src="agency-web_2.svg" alt="">
-           <h3 class="project-heading">Digital Marketing Agency Website</h3>
-        <p class="project-text">This is a website for a client who wants to achieve their goals and meet
-          their users' needs while also increasing their reach across all platforms.
-          This is a website rebrand.
-        </p>
+          <h3 class="project-heading">Digital Marketing Agency Website</h3>
+          <p class="project-text">This is a website for a client who wants to achieve their goals and meet
+            their users' needs while also increasing their reach across all platforms.
+            This is a website rebrand.
+          </p>
+        </div>
 
-       </div>
-
-       <div class="project4">
-        <img src="agency-web_4.svg" alt="">
-         <h3 class="project-heading">Digital Marketing Agency Website</h3>
-        <p class="project-text">This is a website for a client who wants to achieve their goals and meet
-          their users' needs while also increasing their reach across all platforms.
-          This is a website rebrand.
-        </p>
-
-       </div>
+        <div class="project4">
+          <img src="agency-web_4.svg" alt="">
+          <h3 class="project-heading">Digital Marketing Agency Website</h3>
+          <p class="project-text">This is a website for a client who wants to achieve their goals and meet
+            their users' needs while also increasing their reach across all platforms.
+            This is a website rebrand.
+          </p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="testimonials">
-   <h6>TESTIMONIALS</h6>
+  <section class="testimonials">
+    <h6>TESTIMONIALS</h6>
     <p class="subtitle2">See What Our Customers <br> Say About Us</p>
 
     <div class="testimonial-container">
-    <div class="testimonial-content">
-      <p class="testi">Thank You for your service. I am very pleased <br> with the result.
-        I have seen exponential growth <br> in my business and its all thanks to your <br>
-         amazing service.
-      </p>
-       <div class="img-container">
-        <div class="img-circle">
-          <img src="avatar.svg" alt="" width="50" height="50">
-
-        </div>
-        <div>
-          <h4>Emily Stones</h4>
-            <p class="guru">CEO,Marketing Guru</p>
-
-        </div>
-      
-        </div>
-    </div>
-
-    <div class="testimonial-content">
+      <div class="testimonial-content">
         <p class="testi">Thank You for your service. I am very pleased <br> with the result.
-        I have seen exponential growth <br> in my business and its all thanks to your <br>
-         amazing service.
-      </p>
+          I have seen exponential growth <br> in my business and its all thanks to your <br>
+          amazing service.
+        </p>
         <div class="img-container">
-        <div class="img-circle">
-          <img src="007_.jpg" style="border-radius: 50px;" alt="" width="50" height="50">
-
-        </div>
-        <div>
-          <h4>Adeeko Abiola</h4>
-            <p class="guru">CEO, Sparkles & Bubbles Laundromat</p>
-
-        </div>
-      
-        </div>
-    </div>
-
-    <div class="testimonial-content">
-          <p class="testi">Thank You for your service. I am very pleased <br> with the result.
-        I have seen exponential growth <br> in my business and its all thanks to your <br>
-         amazing service.
-      </p>
-        <div class="img-container">
-        <div class="img-circle">
-          <img src="avatar.svg" alt="" width="50" height="50">
-
-        </div>
-        <div>
-          <h4>Emily Stones</h4>
+          <div class="img-circle">
+            <img src="avatar.svg" alt="" width="50" height="50">
+          </div>
+          <div>
+            <h4>Emily Stones</h4>
             <p class="guru">CEO,Marketing Guru</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="testimonial-content">
+        <p class="testi">Thank You for your service. I am very pleased <br> with the result.
+          I have seen exponential growth <br> in my business and its all thanks to your <br>
+          amazing service.
+        </p>
+        <div class="img-container">
+          <div class="img-circle">
+            <img src="007_.jpg" alt="" width="50" height="50">
+          </div>
+          <div>
+            <h4>Adeeko Abiola</h4>
+            <p class="guru">CEO, Sparkles & Bubbles Laundromat</p>
+          </div>
         </div>
-      
+      </div>
+
+      <div class="testimonial-content">
+        <p class="testi">Thank You for your service. I am very pleased <br> with the result.
+          I have seen exponential growth <br> in my business and its all thanks to your <br>
+          amazing service.
+        </p>
+        <div class="img-container">
+          <div class="img-circle">
+            <img src="avatar.svg" alt="" width="50" height="50">
+          </div>
+          <div>
+            <h4>Emily Stones</h4>
+            <p class="guru">CEO,Marketing Guru</p>
+          </div>
         </div>
-    
+      </div>
     </div>
-
-
-
-</div>
-</section>
+  </section>
 
   <div class="sub-container">
     <div class="sub-content">
@@ -228,75 +213,58 @@
       <p class="subtitle2">Subscribe To Get The Latest News About Us</p>
       <p class="update">Please Drop Your Email Below To Get Updates About What We Do</p>
 
-       <div class="email-box">
-  <div class="email-input" contenteditable="true" placeholder="Enter your email address"></div>
-  <button class="submit-btn">Submit</button>
-</div>
-    
+      <div class="email-box">
+        <div class="email-input" contenteditable="true" placeholder="Enter your email address"></div>
+        <button class="submit-btn">Submit</button>
+      </div>
     </div>
-
-
   </div>
 
   <div class="footer">
-     
-     <div class="footer-content">
+    <div class="footer-content">
       <img src="home-icon.svg" alt="">
       <p class="about">Pixel & Hue is a boutique design agency specializing in branding, 
         digital design, and creative strategy. We help startups and established brands
-         stand out with bold visuals, clear messaging, and user-focused experiences. 
-        </p>
+        stand out with bold visuals, clear messaging, and user-focused experiences. 
+      </p>
 
-        <div class="icon-container">
-          <a class="icons" href="">
-            <img src="Facebook (2).svg" alt="" width="35" height="35">
-          </a>
+      <div class="icon-container">
+        <a class="icons" href="">
+          <img src="Facebook (2).svg" alt="" width="35" height="35">
+        </a>
 
-           <a href="">
-            <img src="X.svg" alt="" width="35" height="35">
-          </a>
+        <a href="">
+          <img src="X.svg" alt="" width="35" height="35">
+        </a>
 
-           <a href="">
-            <img src="In.svg" alt="" width="35" height="35">
-          </a>
+        <a href="">
+          <img src="In.svg" alt="" width="35" height="35">
+        </a>
 
-           <a href="">
-            <img src="IG.svg" alt="" width="35" height="35">
-          </a>
+        <a href="">
+          <img src="IG.svg" alt="" width="35" height="35">
+        </a>
+      </div>
+    </div>
 
-        </div>
-      
-
-     </div>
-
-     <div class="footer-content">
+    <div class="footer-content">
       <h5>Quick Links</h5>
-        <div class="links">
-          <a href="#">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
-        </div>
+      <div class="links">
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
 
-     </div>
-
-     <div class="footer-content">
+    <div class="footer-content">
       <h5>Address</h5>
-
       <p class="address-text">Design Agency Head Office. <br>
       Airport Road,<br> United Arab Emirate</p>
-
-     </div>
-
-
-
-
+    </div>
   </div>
 
-
-
-
-  
-  <script src="agency.js"></script>
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
