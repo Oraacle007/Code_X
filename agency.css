@@ -494,3 +494,112 @@ a:hover{
   text-align: left;
   padding-top: 30px;
 }
+
+@media (max-width: 1024px) {
+  .header{
+    padding: 15px 30px; /* Reduce padding for smaller screens */
+  }
+  .hero-section{
+    grid-template-columns: 1fr; /*Stack hero text and image vertically*/
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .lady{
+    height: auto; /* Allow height to adjust based on content */
+    justify-content: center; /* Center the image */
+    padding: 0; /* Remove left padding */
+  }
+
+  .logo-row{
+    gap: 20px;  /* Reduce gap between logos */
+    padding: 10px; /* Reduce padding */
+  }
+.portfolio{
+  padding: 20px 30px; /* Reduce side padding */
+}
+
+.div-left, .div-right{
+  width: 100%; /* Make project sections full width */
+}
+
+.footer{
+  gap: 30px; /* Reduce gap between footer sections */
+  padding-left: 40px; /* Reduce left padding */
+}
+}
+
+/* Mobile Styles*/
+
+@media (max-width: 768px) {
+  .nav{
+    display: none; /* Hide navigation links on mobile */
+  }
+  .logo{
+    margin: auto; /* Center the logo */
+  }
+  .left-div h1{
+    font-size: 1.8rem; /* Reduce heading size */
+
+  }
+
+  .left-div p{
+    font-size: 0.9rem; /* Reduce paragraph size */
+    
+  }
+  .card-container{
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+  }
+
+  .stat-container{
+    flex-direction: column; /* Stack stats vertically */
+    gap: 20px; /* Add gap between stats */
+
+  }
+
+  .testimonial-container{
+    flex-direction:column; /* Stack testimonials vertically */
+  }
+
+  .sub-content{
+    width: 90%; /* Make subscription content fit small screens */
+  }
+
+  .footer{
+    flex-direction: column; /* Stack footer sections vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Reduce padding */
+    width: 100%; /* Ensure footer takes full width */
+  }
+
+  .footer-content{
+    width: 100%; /* Make footer content full width */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+    
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .left-div h1{
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .gs-btn{
+    padding: 10px 15px; /* Reduce button padding */
+    font-size: 0.8rem; /* Reduce button font size */
+  }
+
+  .logo-row img{
+    max-width: 80px; /* Reduce logo size */
+  }
+
+  .testimonial-content{
+    width: 100%; /* Make testimonials full width */
+  }
+
+  .submit-btn{
+    margin-left: 10px; /* Prevent overflow */
+  }
+}
