@@ -485,3 +485,9 @@ a:hover{
   transition: color 0.3s ease;
 }
 
+.address-text{
+  font-size: small;
+  color: black;
+  text-align: left;
+  padding-top: 30px;
+}
