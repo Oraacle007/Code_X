@@ -1,37 +1,32 @@
-*{
-  box-sizing: border-box;
-}
-
-.projects {
-  background-color: #fff;
-}
-
-.project-heading {
-  margin-top: 10px;
-}
-
-.projects-container {
+.email-box {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
 }
 
-.left-div {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 50%;
+.email-input {
+  flex: 1;
+  min-height: 30px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
 }
 
-.right-div {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  width: 50%;
+.email-input:empty::before {
+  content: attr(placeholder);
+  color: #aaa;
 }
 
-/* Fixed invalid selector: replaced .project1 .project3 with individual height settings */
-.project1,
-.project3 {
-  height: 60%;
+.submit-btn {
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
